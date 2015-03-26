@@ -29,7 +29,9 @@ var squareContent = [
 	"Actually useful post (The Unicorn)",
 	"Free stuff",
 	"Person banned without warning",
-	"a knee-jerk reaction"
+	"a knee-jerk reaction",
+	"The Train",
+	"Dog Poop"
 ];
 
 console.log("there are "+squareContent.length+" choices");
