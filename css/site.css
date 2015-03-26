@@ -37,6 +37,14 @@ h1 {
   font-size: 20px;
   background: #F8F8FF;
   text-transform: capitalize;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.square.square__active {
+  background-color: #ff0b3b;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .card {
   background: #0BB5FF;

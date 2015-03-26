@@ -13,7 +13,9 @@ var squareContent = [
 	"Post office complaints",
 	"Dream Cruise",
 	"Complete Nonsense",
-	"Good Chinese/Thai/Sushi recommendation",
+	"Good Chinese Restaurant?",
+	"good Thai restaurant?",
+	"Good Sushi?",
 	"Pizza",
 	"Call the DPW",
 	"There's too many restaurants in Ferndale",
@@ -25,7 +27,9 @@ var squareContent = [
 	"bring child into bar",
 	"post from non-ferndale resident",
 	"Actually useful post (The Unicorn)",
-	"Free stuff"
+	"Free stuff",
+	"Person banned without warning",
+	"a knee-jerk reaction"
 ];
 
 console.log("there are "+squareContent.length+" choices");
@@ -47,18 +51,20 @@ squares.each(function(){
 });
 
 
-$(".square").click(function() {
+// $(".square").click(function() {
 
-	if ($(this).css("background-color") == "rgb(248, 248, 255)") {
-		$(this).css({ 
-			"background": "red",
-			"color": "white" });
-	} else {
-		$(this).css({ 
-			"background": "#F8F8FF",
-			"color": "black" });		
-	}
+// 	if ($(this).css("background-color") == "rgb(248, 248, 255)") {
+// 		$(this).css({ 
+// 			"background": "red",
+// 			"color": "white" });
+// 	} else {
+// 		$(this).css({ 
+// 			"background": "#F8F8FF",
+// 			"color": "black" });		
+// 	}
+// });
+
+squares.on("click", function(){
+	$(this).toggleClass('square__active');
 });
-
-
 
